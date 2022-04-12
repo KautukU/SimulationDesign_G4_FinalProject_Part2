@@ -7,6 +7,9 @@ public class GameController : MonoBehaviour
 {
     public float timeRemaining = 70;
     public Text timeText;
+    public GameObject ball;
+    public float livesRemaining = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,19 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ball.transform.position.y <= -25)
+        {
+            if(livesRemaining > 0)
+            {
+                livesRemaining--;
+                ball.transform.position = new Vector3(-11, 8, 0);
+            }
+            else
+            {
+
+            }
+
+        }
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;

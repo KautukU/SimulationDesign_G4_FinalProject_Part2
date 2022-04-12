@@ -5,15 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public GameObject floor;
-    Vector3 point;
-    // Start is called before the first frame update
     void Start()
     {
-        point = new Vector3(-3, 0, -3);
     }
 
     // Update is called once per frame
     void Update()
+    {
+        InputManagement();
+    }
+
+    void InputManagement()
     {
         if (Input.GetKey(KeyCode.A))
         {
