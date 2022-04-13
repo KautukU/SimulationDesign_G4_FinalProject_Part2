@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -8,6 +10,7 @@ public class GameController : MonoBehaviour
     public float timeRemaining = 70;
     public Text timeText;
     public GameObject ball;
+    public Text lives;
     public float livesRemaining = 3;
 
     // Start is called before the first frame update
@@ -21,14 +24,15 @@ public class GameController : MonoBehaviour
     {
         if (ball.transform.position.y <= -25)
         {
-            if(livesRemaining > 0)
+            if(livesRemaining >= 0)
             {
                 livesRemaining--;
+                lives.text = livesRemaining + "/3";
                 ball.transform.position = new Vector3(-11, 8, 0);
             }
             else
             {
-
+                SceneManager.LoadScene("LostScene");
             }
 
         }
