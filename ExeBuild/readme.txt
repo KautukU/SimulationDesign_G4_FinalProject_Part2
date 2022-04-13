@@ -1,1 +1,0 @@
-The project is named Simulation Design but this is actually Special Topics - Gaming
