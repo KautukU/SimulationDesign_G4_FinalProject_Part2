@@ -7,16 +7,17 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public float timeRemaining = 70;
+    public float timeRemaining = 30;
     public Text timeText;
     public GameObject ball;
     public Text lives;
     public float livesRemaining = 3;
+    public PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -24,11 +25,11 @@ public class GameController : MonoBehaviour
     {
         if (ball.transform.position.y <= -25)
         {
-            if(livesRemaining >= 0)
+            if(livesRemaining > 0)
             {
                 livesRemaining--;
                 lives.text = livesRemaining + "/3";
-                ball.transform.position = new Vector3(-11, 8, 0);
+                ball.transform.position = new Vector3(-11, 5, 0);
             }
             else
             {
