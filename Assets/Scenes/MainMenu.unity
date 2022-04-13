@@ -685,12 +685,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Created by: Group 5
-
-    Nataliia Arsenieva (301043237)
-
-    Insert you
-    names here pls'
+  m_Text: "Created by: Group 5\nNataliia Arsenieva (301043237)\nGuilherme Rodrigo
+    de Freitas Felipe (301083850\r)\nGurwinder Singh (301093885\r)\nKautuk Udavant
+    (301072587\r)\n"
 --- !u!222 &1352111896
 CanvasRenderer:
   m_ObjectHideFlags: 0

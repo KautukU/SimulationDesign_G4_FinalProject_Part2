@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d1d9257e68f7d429dddea59df9c160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 30
   timeText: {fileID: 1898049832}
   ball: {fileID: 293413342}
   lives: {fileID: 1951768881}
