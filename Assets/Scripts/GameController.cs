@@ -45,6 +45,7 @@ public class GameController : MonoBehaviour
         {
             Debug.Log("Time has run out!");
             timeRemaining = 0;
+            SceneManager.LoadScene("WinScene");
         }
     }
     void DisplayTime(float timeToDisplay)

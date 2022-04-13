@@ -1419,6 +1419,7 @@ MonoBehaviour:
   timeRemaining: 60
   timeText: {fileID: 950423423}
   ball: {fileID: 293413342}
+  lives: {fileID: 1864539454}
   livesRemaining: 3
 --- !u!1 &1639229216
 GameObject:
