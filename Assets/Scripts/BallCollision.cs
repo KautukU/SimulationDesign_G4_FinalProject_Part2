@@ -19,6 +19,7 @@ public class BallCollision : MonoBehaviour
                 nextActionTime += period;
                 points += 10;
                 pointsText.text = points.ToString();
+                PlayerPrefs.SetInt("score", points);
             }
            
         }
