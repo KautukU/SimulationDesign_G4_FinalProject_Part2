@@ -48,9 +48,9 @@ public class Ball3DAgent : Agent
         {
             gameObject.transform.Rotate(new Vector3(1, 0, 0), actionX);
         }
-        if ((ball.transform.position.y - gameObject.transform.position.y) < -2f ||
-            Mathf.Abs(ball.transform.position.x - gameObject.transform.position.x) > 3f ||
-            Mathf.Abs(ball.transform.position.z - gameObject.transform.position.z) > 3f)
+        if ((ball.transform.position.y - gameObject.transform.position.y) < -3f ||
+            Mathf.Abs(ball.transform.position.x - gameObject.transform.position.x) > 5f ||
+            Mathf.Abs(ball.transform.position.z - gameObject.transform.position.z) > 5f)
         {
             SetReward(-1f);
             EndEpisode();
