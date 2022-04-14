@@ -6,18 +6,6 @@ using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
-    public Scene currentScene;
-    void Start()
-    {
-        currentScene = SceneManager.GetActiveScene();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -32,7 +20,11 @@ public class SceneController : MonoBehaviour
     }
     public void LoadGame()
     {
-        Debug.Log("gvdkfjg");
         SceneManager.LoadScene("RollerBall");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
